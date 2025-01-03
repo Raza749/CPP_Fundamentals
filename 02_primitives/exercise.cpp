@@ -38,19 +38,22 @@ int main()
 
     // Question No 02
     /*
-    Modify Tea Prices Create a program where the user inputs a 
-    base price for tea. Use type casting to increase the price by 
+    Modify Tea Prices Create a program where the user inputs a
+    base price for tea. Use type casting to increase the price by
     10% and display the rounded new price using explicit casting.
     */
 
-   int teaPrice;
-   cout << "Enter the Tea price..." << endl;
-    
-    cin >> teaPrice;
-    
-   cout << "You Entered the price of Tea is : " << teaPrice << endl;
+    float basePrice,newPrice;
 
 
+    cout << "Enter the base price..." << endl;
+    cin >> basePrice;
+    
+    newPrice = basePrice * 1.10;
+
+    int roundedPrice = (int) newPrice ;
+
+    cout << "The rounded price is : " << roundedPrice << endl;
 
     return 0;
 };
