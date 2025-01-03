@@ -43,17 +43,38 @@ int main()
     10% and display the rounded new price using explicit casting.
     */
 
-    float basePrice,newPrice;
+    // float basePrice,newPrice;
 
+    // cout << "Enter the base price..." << endl;
+    // cin >> basePrice;
 
-    cout << "Enter the base price..." << endl;
-    cin >> basePrice;
-    
-    newPrice = basePrice * 1.10;
+    // newPrice = basePrice * 1.10;
 
-    int roundedPrice = (int) newPrice ;
+    // int roundedPrice = (int) newPrice ;
 
-    cout << "The rounded price is : " << roundedPrice << endl;
+    // cout << "The rounded price is : " << roundedPrice << endl;
+
+    // Question No 03
+
+    /*
+    Favorite Tea Input Write a program that takes the user's
+     favorite tea as input using getline and also asks how many
+      cups of tea they want using cin. Display the result in a fün
+       message
+       */
+
+    string favTea;
+    int teaQty;
+
+    //   User Input
+
+    cout << "What is your favorite tea?" << endl;
+    getline(cin, favTea);
+
+    cout << "How may cups would you like to have?" << endl;
+    cin >> teaQty;
+
+    cout << "Your order is " << favTea << " and you orderd " << teaQty << " cups of tea... Thanks for comming ☺️" << endl;
 
     return 0;
 };
